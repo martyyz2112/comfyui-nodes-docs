@@ -4,34 +4,34 @@
 - Category: rgthree
 - Output node: False
 
-SDXL Empty Latent Image (rgthree)节点用于生成一个基于指定尺寸的空白潜在图像,并根据裁剪比例进行缩放。它主要作为图像生成过程的基础步骤,在进行进一步的操作或添加之前,创建一个初始的、空白的潜在空间。
+The SDXL Empty Latent Image (rgthree) node is used to generate a blank latent image based on specified dimensions and scaled according to the crop ratio. It is mainly used as a basic step in the image generation process to create an initial, blank latent space before further manipulation or addition.
 
 # Input types
 ## Required
 - dimensions
-    - 指定要生成的潜在图像的尺寸,提供一系列预定义的尺寸选项,包括从横向到纵向以及正方形的各种宽高比。这个参数对于确定潜在图像的基本尺寸至关重要。
+    - Specifies the size of the potential image to be generated, providing a range of predefined size options, including various aspect ratios from landscape to portrait and square. This parameter is essential for determining the basic dimensions of the potential image.
     - Comfy dtype: COMBO[STRING]
     - Python dtype: str
 - clip_scale
-    - 决定应用于潜在图像尺寸的缩放因子,影响裁剪区域的最终大小。这个参数在调整生成图像的分辨率方面起着重要作用。
+    - Determines the scaling factor applied to the potential image size, which affects the final size of the cropped area. This parameter plays an important role in adjusting the resolution of the resulting image.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - batch_size
-    - 控制在单个批次中生成的潜在图像数量,允许同时高效处理多个图像。
+    - Controls the number of potential images generated in a single batch, allowing efficient processing of multiple images simultaneously.
     - Comfy dtype: INT
     - Python dtype: int
 
 # Output types
 - LATENT
-    - 生成的空白潜在图像。
+    - Generated blank potential image.
     - Comfy dtype: LATENT
     - Python dtype: torch.Tensor
 - CLIP_WIDTH
-    - 将裁剪比例应用于原始尺寸后的裁剪区域宽度。
+    - The width of the cropping area after applying the crop ratio to the original size.
     - Comfy dtype: INT
     - Python dtype: int
 - CLIP_HEIGHT
-    - 将裁剪比例应用于原始尺寸后的裁剪区域高度。
+    - Applies the crop ratio to the height of the cropped area after the original dimensions.
     - Comfy dtype: INT
     - Python dtype: int
 

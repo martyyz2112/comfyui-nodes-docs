@@ -4,38 +4,38 @@
 - Output node: False
 - Repo Ref: https://github.com/FizzleDorf/ComfyUI_FizzNodes
 
-生成一个绝对正弦波模式，该模式在指定的最大值和零之间振荡，受相位、振幅和转换参数的影响。此节点旨在为信号处理或动画等各种应用提供多功能波形。
+Generate a absolute sine wave mode, which oscillates between the specified maximum value and zero, which is affected by the phase, amplitude and conversion parameters.This node aims to provide multi -function waveforms for various applications such as signal processing or animation.
 
 # Input types
 ## Required
 - phase
-    - 相位参数决定了正弦波的周期，影响波的频率和整体模式。这对于调整波形中振荡的时间至关重要。
+    - The phase parameter determines the cycle of sine waves, affecting the frequency and overall mode of the waves.This is essential for adjusting the time of oscillation in the waveform.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - amplitude
-    - 振幅设置正弦波的高度，控制振荡的幅度。它是定义波形强度的基本参数。
+    - The amplitude sets the height of a sine wave to control the amplitude of the oscillation.It is the basic parameter of defining waveform strength.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - x_translation
-    - x_translation参数沿x轴移动波形，允许在波形模式内进行水平移动。它对于在给定上下文中定位波形非常重要。
+    - x_translation The parameters move the waveform along the X -axis, allowing horizontal movement in the waveform mode.It is very important for positioning waveforms in the given context.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - max_value
-    - max_value建立了波的上限，定义了正弦波可以达到的最大点。它是设置波振荡规模的关键参数。
+    - max_value The upper limit of the waves is established to define the maximum point that sine waves can reach.It is a key parameter for setting wave oscillating scale.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - current_frame
-    - current_frame参数表示时间或序列中的当前位置，波函数使用它来计算其输出。对于在特定时刻生成正确的波形至关重要。
+    - current_frame Parameters represent the current position in time or sequence. The wave function uses it to calculate its output.It is essential for the correct waveform at a certain time.
     - Comfy dtype: INT
     - Python dtype: int
 
 # Output types
 - output
-    - 输出提供了当前帧绝对正弦波的计算值，代表波形的y坐标。
+    - The output provides the calculation value of the absolute sine wave of the current frame, which represents the Y coordinate of the waveform.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - int_output
-    - int_output是输出的整数表示，对于需要离散值而非连续值的应用非常有用。
+    - int_output It is an integer output, which is very useful for applications that require discrete values ​​rather than continuity.
     - Comfy dtype: INT
     - Python dtype: int
 

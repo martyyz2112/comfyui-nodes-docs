@@ -4,34 +4,34 @@
 - Output node: True
 - Repo Ref: https://github.com/shadowcz007/comfyui-mixlab-nodes.git
 
-Image3D节点旨在处理和操作3D图像。它接受一个base64编码的图像和可选的材料作为输入，将它们转换为适合深度学习模型进一步处理的张量形式。该节点还处理掩码和背景图像的提取，提供一套全面的图像操作功能。
+The Image3D node is designed to process and manipulate 3D images. It accepts a base64 encoded image and optional materials as input, converting them into a tensor form suitable for further processing by deep learning models. The node also handles mask and background image extraction, providing a comprehensive set of image manipulation capabilities。
 
 # Input types
 ## Required
 - upload
-    - ‘upload’参数对于节点至关重要，因为它包含base64编码的图像数据和可选的材料进行处理。它对节点的执行至关重要，因为它提供了图像操作的主要输入。
+    - The 'upload' parameter is critical to the node as it contains base64 encoded image data and optional material for processing. It is critical to the execution of the node as it provides the primary input for image manipulation.
     - Comfy dtype: Dict[str, str]
-    - Python dtype: Dict[str, Union[str, torch.Tensor]]
+    - Python dtype: Dict[str, Union[str, torch.]
 - material
-    - ‘material’参数是可选的，允许包含可以用于增强主要图像处理过程的额外图像数据。它通过启用补充视觉元素的使用，增加了节点功能的灵活性。
+    - The 'material' parameter is optional, allowing the inclusion of additional image data that can be used to enhance the main image processing process. It adds flexibility to the node functionality by enabling the use of supplementary visual elements.
     - Comfy dtype: IMAGE
-    - Python dtype: Optional[torch.Tensor]
+    - Python dtype: Optional[torch.]
 
 # Output types
 - IMAGE
-    - ‘IMAGE’输出代表以张量形式处理的3D图像，可用于机器学习或计算机视觉应用等下游任务。
+    - 'IMAGE' outputs represent 3D images processed in tensor form and can be used for downstream tasks such as machine learning or computer vision applications.
     - Comfy dtype: IMAGE
-    - Python dtype: torch.Tensor
+    - Python dtype: torch.
 - MASK
-    - ‘MASK’输出提供了从输入图像派生的二进制掩码，可用于分割或其他图像分析任务。
+    - The 'MASK' output provides a binary mask derived from the input image and can be used for segmentation or other image analysis tasks.
     - Comfy dtype: IMAGE
     - Python dtype: torch.Tensor
 - BG_IMAGE
-    - ‘BG_IMAGE’输出是可选的背景图像，它补充了主要图像，为某些应用增强了上下文。
+    - The 'BG_IMAGE' output is an optional background image that complements the main image, enhancing the context for certain applications.
     - Comfy dtype: IMAGE
     - Python dtype: Optional[torch.Tensor]
 - MATERIAL
-    - ‘MATERIAL’输出是处理过的材料图像，可以与主要图像一起用于更复杂的图像处理任务。
+    - The 'MATERIAL' output is a processed material image that can be used with the main image for more complex image processing tasks.
     - Comfy dtype: IMAGE
     - Python dtype: Optional[torch.Tensor]
 

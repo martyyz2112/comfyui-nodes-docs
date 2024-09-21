@@ -4,38 +4,38 @@
 - Output node: False
 - Repo Ref: https://github.com/FizzleDorf/ComfyUI_FizzNodes
 
-该节点基于一组输入参数生成波形模式，模拟具有可调节特性的振荡行为。
+The node generates waveform mode based on a set of input parameters to simulate oscillating behavior with adjustable characteristics.
 
 # Input types
 ## Required
 - phase
-    - 相位参数决定了波浪振荡的间隔，影响波浪模式的频率和周期。
+    - The phase parameter determines the interval between the wave oscillating and affects the frequency and cycle of the wave mode.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - amplitude
-    - 振幅控制波浪的大小，决定了波浪模式中峰值和谷值的大小。
+    - The size of the amplitude control of the waves determines the peak and valley value in the wave mode.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - x_translation
-    - X_translation 沿着 x 轴水平移动波浪，改变波浪模式的位置而不改变其形状。
+    - X_translation Move the waves along the X -axis level to change the position of the wave mode without changing its shape.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - max_value
-    - 最大值参数设置了波浪的上限，确保输出保持在定义的范围内。
+    - The maximum value parameter sets the upper limit of the waves to ensure that the output remains within the definition range.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - current_frame
-    - 当前帧表示波浪随时间的进展，每一帧对应波浪周期中的一个点。
+    - The current frame represents the progress of waves with time, and each frame corresponds to one point in the wave cycle.
     - Comfy dtype: INT
     - Python dtype: int
 
 # Output types
 - output
-    - 输出代表当前帧波浪的计算值，反映了节点对输入参数的处理。
+    - The output represents the calculation value of the current frame waves, which reflects the processing of the input parameter.
     - Comfy dtype: FLOAT
     - Python dtype: float
 - int_output
-    - 整型输出是波浪计算输出的四舍五入值，提供了波浪模式的离散表示。
+    - The integer output is the four -house five -in -five value of the wave computing output, which provides discrete representations of the wave mode.
     - Comfy dtype: INT
     - Python dtype: int
 
